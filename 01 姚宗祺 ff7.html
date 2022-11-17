@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(./ff7_flexbox/bg-full.jpg);
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+      }
+      .container {
+        height: 600px;
+        width: 1200px;
+        background-color: aqua;
+        display: flex;
+      }
+      .left {
+        height: 600px;
+        width: 600px;
+        background-image: url(./ff7_flexbox/main.jpg);
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        height: 250px;
+      }
+
+      /* .right {
+        display: flex;
+      } */
+
+      .cloud {
+        width: 600px;
+        height: 300px;
+        background-color: rgb(193, 191, 191);
+        display: flex;
+      }
+      .tifa {
+        width: 600px;
+        height: 300px;
+        background-color: black;
+        color: white;
+        display: flex;
+        z-index: 1;
+      }
+      #tifa {
+        display: flex;
+        align-self: flex-end;
+      }
+      #cloud {
+        display: flex;
+        align-self: flex-end;
+      }
+      .tafa-content,
+      .cloud-content {
+        width: 60%;
+        height: 80%;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="left-content">
+          <img class="cover" src="./ff7_flexbox/ps4-ff7.png" alt="" />
+          <h1>Available Now</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla,
+            enim vel consequuntur iure aperiam iusto in ad tempore eligendi,
+            doloremque dicta quam repudiandae deleniti odit, adipisci porro?
+            Dolorum, cumque vel!
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="cloud">
+          <div class="cloud-content">
+            <h1>Cloud</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
+              accusantium repellendus beatae provident molestiae quisquam
+              reiciendis excepturi saepe quaerat illum vero alias modi facere
+              consectetur magni, impedit libero et deserunt.
+            </p>
+          </div>
+          <img id="cloud" src="./ff7_flexbox/cloud.png" alt="" />
+        </div>
+        <div class="tifa">
+          <img id="tifa" src="./ff7_flexbox/tifa.png" alt="" />
+          <div class="tifa-content">
+            <h1>Tifa</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor,
+              nisi sed facere ipsum aperiam nobis quo reprehenderit fugit quam
+              aspernatur voluptates aut facilis? Perferendis fugit praesentium
+              veritatis? Reiciendis, minus accusantium.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
